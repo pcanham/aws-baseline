@@ -21,3 +21,25 @@ control 'aws-networking-02' do
     end
   end
 end
+
+control 'aws-networking-03' do
+  impact 0.7
+  title 'WinRM HTTP should not be world-open on 5985'
+  
+  aws_security_groups.group_ids.each do |sg_id|
+    describe aws_security_group(group_id: sg_id) do
+      it { should_not allow_in(ipv4_range: '0.0.0.0/0', port: 5985) }
+    end
+  end
+end
+
+control 'aws-networking-04' do
+  impact 0.7
+  title 'WinRM HTTPS should not be world-open on 5986'
+  
+  aws_security_groups.group_ids.each do |sg_id|
+    describe aws_security_group(group_id: sg_id) do
+      it { should_not allow_in(ipv4_range: '0.0.0.0/0', port: 5986) }
+    end
+  end
+end

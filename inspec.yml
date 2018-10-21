@@ -1,7 +1,6 @@
 name: aws-baseline
 title: AWS Baseline
-maintainer: Christoph Hartmann
-copyright: Christoph Hartmann
-copyright_email: chris@lollyrock.com
-license: Apache 2
-version: 0.1.0
+maintainer: Paul Canham
+copyright: Paul Canham
+copyright_email: paul@canham.io
+version: 0.0.1
