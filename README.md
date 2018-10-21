@@ -1,5 +1,5 @@
 # AWS Baseline
 
 ```bash
-inspec exec controls/* -t aws://eu-west-1/<profile>
+inspec exec . -t aws://eu-west-1/<profile>
 ```
