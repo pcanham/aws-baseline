@@ -1,6 +1,6 @@
-title 'AWS Networking Recommendations'
+title 'AWS Security Group Recommendations'
 
-control 'aws-networking-01' do
+control 'aws-secgrp-01' do
   impact 0.7
   title 'No security groups should be world-open on port 22'
 
@@ -11,7 +11,7 @@ control 'aws-networking-01' do
   end
 end
 
-control 'aws-networking-02' do
+control 'aws-secgrp-02' do
   impact 0.7
   title 'No security groups should be world-open on port 3389'
   
@@ -22,7 +22,7 @@ control 'aws-networking-02' do
   end
 end
 
-control 'aws-networking-03' do
+control 'aws-secgrp-03' do
   impact 0.7
   title 'WinRM HTTP should not be world-open on 5985'
   
@@ -33,7 +33,7 @@ control 'aws-networking-03' do
   end
 end
 
-control 'aws-networking-04' do
+control 'aws-secgrp-04' do
   impact 0.7
   title 'WinRM HTTPS should not be world-open on 5986'
   
